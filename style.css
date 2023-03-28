@@ -40,7 +40,6 @@ header{
     line-height: 44px;
     letter-spacing: -0.527778px;
     color: #172339;
-    
     margin-top: 83.32px;
 }
 .text{
@@ -170,6 +169,13 @@ header{
     position: relative;
     top: -181px;
     left: 15px;
+    z-index: 1;
+}
+#jeremy2x{
+    display: none;
+}
+#blur{
+    display: none;
 }
 footer{
     text-align: center;
@@ -219,6 +225,8 @@ footer p{
         padding: 0 40px;
         display: flex;
         justify-content: space-between;
+        position: relative;
+        margin-top:80px ;
     }
     #mobile{
         display: none;
@@ -235,8 +243,122 @@ footer p{
     .data{
         display: flex;
         justify-content: space-around;
+        margin-top: 128px;
     }
     #mobile-tab{
         display: block;
+        position: absolute;
+        z-index: -1;
+        left: 58.2%;
+        width: 36.58%;
+        height: 482px;
+    }
+    #blur{
+        display: block;
+        position: absolute;
+        top: -150px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 0;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 78px 40px;
+    }
+    .social{
+        margin: 0;
+    }
+    #footer-logo{
+        margin: 0;
+    }
+    footer p{
+        margin: 0;
+    }
+
+}
+@media (min-width:1440px){
+    .upper{
+        display: flex;
+        gap:6.6%;
+        padding: 0 165px;
+    }
+    .data{
+        display: block;
+        
+    }
+    .down{
+        margin-top: 63px;
+
+    }
+    .text h1{
+        font-size: 72px;
+        line-height: 78px;
+        letter-spacing: -1px;
+        width:635px ;
+    }
+    .text p{
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+    }
+
+    .works{
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        
+    }
+
+    .quote{
+        margin-top: 40px;
+        max-width: 500px;
+        
+
+    }
+    .works h4{
+        margin-top: 40px;
+        
+    }
+    .rightside h2, .rightside h4, .rightside p {
+        text-align: left;
+    }
+    .rightside h2{
+        margin-top: 88px;
+    }
+    .cmo{
+        margin-bottom: 88px;
+    }
+    #jeremy{
+        display: none;
+    }
+    #jeremy2x{
+        display: block;
+        width: 375px;
+        height: 600px;
+        position: absolute;
+        top: -45px;
+        left: 7.77%;
+        z-index: 1;
+    }
+    #blur{
+        left: 18%;
+        top: 130px;
+    }
+    .secondpattern{
+        width: 64.05px;
+        height: 52px;
+    }
+    header{
+        padding: 0 165px;
+    }
+    footer{
+        padding: 0 165px;
+        margin-top:95px ;
+        margin-bottom: 65px;
+    }
+    .text{
+        padding: 0;
     }
 }
